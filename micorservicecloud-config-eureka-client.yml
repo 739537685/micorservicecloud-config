@@ -3,7 +3,8 @@ spring:
     active: dev
  
 ---
-
+server:
+  port: 7001
 spring: 
   profiles: dev
   application:
@@ -19,7 +20,8 @@ eureka:
     
 
 ---
-
+server:
+  port: 7001
 spring: 
   profiles: test
   application:
