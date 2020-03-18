@@ -27,7 +27,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
-    
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.xiaolong.springcloud.entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml    
 
 ---
 server:
@@ -54,3 +57,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.xiaolong.springcloud.entities
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
